@@ -123,7 +123,7 @@ search_move(searchdir, 0)
 
 print ("{0} directories moved.".format(num_moved))
 print ("\nRemoving empty folders...")
-os.system("python removeEmptyFolders.py \"{0}\"".format(searchdir))
+os.system("python F:\\DevArchive\\Scripts\\removeEmptyFolders.py \"{0}\"".format(searchdir))
 print ("\n[End]")
 print ("****************************************************************\n\n")
 
