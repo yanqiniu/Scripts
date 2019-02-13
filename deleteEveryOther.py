@@ -1,9 +1,9 @@
 import sys
 import os
 
-print "\n\n****************************************************************"
+print ("\n\n****************************************************************")
 
-print "Deleting every other file..."
+print ("Deleting every other file...")
 
 directory = sys.argv[1]
 target_num = 0
@@ -12,11 +12,11 @@ target_num = 0
 # 	print "Target number: {0}".format(target_num)
 
 
-print "Directory: [{0}]".format(directory)
+print ("Directory: [{0}]".format(directory))
 
 file_list = os.listdir(directory)
 num_of_files = len(file_list)
-print "Number of files: {0}".format(num_of_files)
+print ("Number of files: {0}".format(num_of_files))
 
 do_delete = False
 counter = 0
@@ -25,15 +25,15 @@ for img in file_list:
 		do_delete = do_delete
 	elif do_delete == True:
 		file_path = os.path.join(directory, img)
-		print "Deleted {0}".format(file_path)
+		print ("Deleted {0}".format(file_path))
 		os.remove(file_path)
 		do_delete = False
 		counter = counter + 1
 	else: 
 		do_delete = True
 
-print "Finished one run-thru. Deleted [{0}] files.".format(counter)
+print ("Finished one run-thru. Deleted [{0}] files.".format(counter))
 num_of_files = num_of_files - counter
-print "****************************************************************\n\n"
+print ("****************************************************************\n\n")
 
 

@@ -1,0 +1,3 @@
+HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory
+
+HKEY_CLASSES_ROOT\*\shell and shellex
